@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+    "http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+    <!--测试一个类的增删改查，模糊查询，分页查询操作的json数据是否正确-->
+    <package name="user" extends="struts-default,json-default" namespace="/">
+        <action name="userAction_*" class="com.hzs.action.UserAction" method="{1}">
+            <result name="success" type="json">
+                <param name="root">jsonObject</param>
+            </result>
+            <allowed-methods>addUser,addUser1,getUserByAll,pageQuery</allowed-methods>
+        </action>
+    </package>
+
+    <package name="admin" extends="struts-default,json-default" namespace="/">
+        <action name="adminAction_*" class="com.hzs.action.AdminAction" method="{1}">
+            <result name="success" type="json">
+                <param name="root">jsonObject</param>
+            </result>
+            <allowed-methods>save,delete,update,find,findAll,pageQuery,vagueQuery</allowed-methods>
+        </action>
+    </package>
+
+    <package name="teacher" extends="struts-default,json-default" namespace="/">
+        <action name="teacherAction_*" class="com.hzs.action.TeacherAction" method="{1}">
+            <result name="success" type="json">
+                <param name="root">jsonObject</param>
+            </result>
+            <allowed-methods>save,delete,update,find,findAll,pageQuery,vagueQuery</allowed-methods>
+        </action>
+    </package>
+
+    <package name="ArrangeClass" extends="struts-default,json-default" namespace="/">
+        <action name="courseAction_*" class="com.hzs.action.CourseAction" method="{1}">
+            <result name="success" type="json">
+                <param name="root">jsonObject</param>
+            </result>
+            <allowed-methods>save,delete,update,find,findAll,pageQuery,vagueQuery</allowed-methods>
+        </action>
+
+        <action name="coursePlanAction_*" class="com.hzs.action.CoursePlanAction" method="{1}">
+            <result name="success" type="json">
+                <param name="root">jsonObject</param>
+            </result>
+            <allowed-methods>save,delete,update,find,findAll,pageQuery,vagueQuery,findByField</allowed-methods>
+        </action>
+
+        <action name="classroomAction_*" class="com.hzs.action.ClassroomAction" method="{1}">
+            <result name="success" type="json">
+                <param name="root">jsonObject</param>
+            </result>
+            <allowed-methods>save,delete,update,find,findAll,pageQuery,vagueQuery</allowed-methods>
+        </action>
+
+        <action name="testAction_*" class="com.hzs.action.TestAction" method="{1}">
+            <result name="success" type="json">
+                <param name="root">jsonObject</param>
+            </result>
+            <allowed-methods>findAll</allowed-methods>
+        </action>
+
+        <action name="arrangeRuleAction_*" class="com.hzs.action.ArrangeRuleAction" method="{1}">
+            <result name="success" type="json">
+                <param name="root">jsonObject</param>
+            </result>
+            <allowed-methods>save,delete,update,find,findAll,pageQuery,vagueQuery,findByField</allowed-methods>
+        </action>
+
+    </package>
+
+    <!-- 引入资源文件 -->
+</struts>

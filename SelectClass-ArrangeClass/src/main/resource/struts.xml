@@ -59,6 +59,14 @@
             </result>
             <allowed-methods>findAll</allowed-methods>
         </action>
+
+        <action name="arrangeRuleAction_*" class="com.hzs.action.ArrangeRuleAction" method="{1}">
+            <result name="success" type="json">
+                <param name="root">jsonObject</param>
+            </result>
+            <allowed-methods>save,delete,update,find,findAll,pageQuery,vagueQuery,findByField</allowed-methods>
+        </action>
+
     </package>
 
     <!-- 引入资源文件 -->
