@@ -92,9 +92,9 @@ public class TestAction extends BaseAction<CourseCondition> {
         CourseCondition courseCondition3=new CourseCondition(3,"计算机组成原理",2,1,0,34,1);
 //        CourseCondition courseCondition4=new CourseCondition(4,"软件工程",4,1,0,12,1);
         CourseCondition courseCondition6=new CourseCondition(4,"C++",4,1,0,12,1);
-        CourseCondition courseCondition7=new CourseCondition(4,"C语言",4,1,0,12,1);
-        CourseCondition courseCondition8=new CourseCondition(4,"SSH",4,1,0,34,1);
-        CourseCondition courseCondition9=new CourseCondition(4,"SSM",4,1,0,12,1);
+        CourseCondition courseCondition7=new CourseCondition(5,"C语言",4,1,0,12,1);
+        CourseCondition courseCondition8=new CourseCondition(6,"SSH",4,1,0,34,1);
+        CourseCondition courseCondition9=new CourseCondition(7,"SSM",4,1,0,12,1);
 
         List<CourseCondition> list=new ArrayList<>();
         list.add(courseCondition3);

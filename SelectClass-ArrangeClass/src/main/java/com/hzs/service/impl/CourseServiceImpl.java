@@ -69,4 +69,23 @@ public class CourseServiceImpl extends BaseServiceImpl<Course> implements ICours
     public Course findByField(Object condition, String field) {
         return courseDao.findByField(condition,field);
     }
+
+    @Override
+    public List<Course> findAllByMajor(String major, String grade) {
+        return courseDao.findAllByMajor(major,grade);
+    }
+
+    @Override
+    public List<Object> findByDistinct(Object field) {
+        return courseDao.findByDistinct(field);
+    }
+
+    @Override
+    public List<Course> findAllByThree(String major, String grade, String field, String condition) {
+        if(field.equals("courseName"))
+            field="course_name";
+        else
+            field="course_property";
+        return courseDao.findAllByThree(major,grade,field,condition);
+    }
 }

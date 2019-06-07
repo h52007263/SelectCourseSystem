@@ -33,4 +33,13 @@ public interface IBaseService<T> {
     //任意字段的等值查询
     public T findByField(Object condition,String field);
 
+    //批量增加
+    public void batchSave(List<T> entitys);
+
+    //批量删除，通过专业和年级
+    public void batchDelete(String major,String grade);
+
+    //任意字段的去重查询
+    public List<Object> findByDistinct(Object field);
+
 }

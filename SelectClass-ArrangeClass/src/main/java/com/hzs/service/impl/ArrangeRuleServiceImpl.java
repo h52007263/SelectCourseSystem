@@ -66,4 +66,5 @@ public class ArrangeRuleServiceImpl extends BaseServiceImpl<ArrangeRule> impleme
     public List<ArrangeRule> vagueQuery1(Object condition, String field) {
         return arrangeRuleDao.vagueQuery1(condition,field);
     }
+
 }

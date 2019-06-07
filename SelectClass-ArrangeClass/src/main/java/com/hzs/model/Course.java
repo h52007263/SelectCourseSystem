@@ -18,6 +18,8 @@ public class Course {
     private Integer courseHour;
     private Integer courseCredit;
     private Integer capacity;
+    private Integer grade;
+    private String major;
 
     //课程  多对一  教师
     private Teacher teacher;
@@ -100,15 +102,51 @@ public class Course {
         this.capacity = capacity;
     }
 
+    @Column(name = "grade")
+    public Integer getGrade() {
+        return grade;
+    }
+
+    public void setGrade(Integer grade) {
+        this.grade = grade;
+    }
+
+    @Column(name = "major",length = 20)
+    public String getMajor() {
+        return major;
+    }
+
+    public void setMajor(String major) {
+        this.major = major;
+    }
+
     public Course() {
     }
 
-    public Course(String courseName, String courseProperty, Integer courseHour, Integer courseCredit, Integer capacity) {
+    public Course(int courseId, String courseName, String courseProperty, Integer courseHour, Integer courseCredit,
+                  Integer capacity, Integer grade, String major, Teacher teacher, CoursePlan coursePlan) {
+        this.courseId = courseId;
         this.courseName = courseName;
         this.courseProperty = courseProperty;
         this.courseHour = courseHour;
         this.courseCredit = courseCredit;
         this.capacity = capacity;
+        this.grade = grade;
+        this.major = major;
+        this.teacher = teacher;
+        this.coursePlan = coursePlan;
+    }
+
+    public Course(int courseId, String courseName, String courseProperty, Integer courseHour,
+                  Integer courseCredit, Integer capacity, Integer grade, String major) {
+        this.courseId = courseId;
+        this.courseName = courseName;
+        this.courseProperty = courseProperty;
+        this.courseHour = courseHour;
+        this.courseCredit = courseCredit;
+        this.capacity = capacity;
+        this.grade = grade;
+        this.major = major;
     }
 
     @Override
@@ -120,6 +158,10 @@ public class Course {
                 ", courseHour=" + courseHour +
                 ", courseCredit=" + courseCredit +
                 ", capacity=" + capacity +
+                ", grade=" + grade +
+                ", major='" + major + '\'' +
+                ", teacher=" + teacher +
+                ", coursePlan=" + coursePlan +
                 '}';
     }
 }

@@ -69,6 +69,12 @@ public class CoursePlan {
         this.section = section;
     }
 
+    public CoursePlan(int courseplanId, Integer weight, Integer section) {
+        this.courseplanId = courseplanId;
+        this.weight = weight;
+        this.section = section;
+    }
+
     @Override
     public String toString() {
         return "CoursePlan{" +

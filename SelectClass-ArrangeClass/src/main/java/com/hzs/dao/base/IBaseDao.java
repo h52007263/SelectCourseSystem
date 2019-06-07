@@ -36,4 +36,16 @@ public interface IBaseDao<T> {
     //通过任意字段的查询
     public T findByField(Object condition,String field);
 
+    //查询某表的最大id
+    public Integer findByMaxId();
+
+    //批量增加
+    public void batchSave(List<T> entitys);
+
+    //批量删除，通过专业和年级
+    public void batchDelete(String major,String grade);
+
+    //任意字段的去重查询
+    public List<Object> findByDistinct(Object field);
+
 }

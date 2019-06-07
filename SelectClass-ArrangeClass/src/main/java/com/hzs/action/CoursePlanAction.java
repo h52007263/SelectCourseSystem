@@ -1,14 +1,19 @@
 package com.hzs.action;
 
 import com.hzs.action.base.BaseAction;
+import com.hzs.model.Course;
 import com.hzs.model.CoursePlan;
 import com.hzs.service.ICoursePlanService;
+import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
+import net.sf.json.JsonConfig;
 import org.apache.struts2.ServletActionContext;
 import org.apache.struts2.json.annotations.JSON;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -69,6 +74,21 @@ public class CoursePlanAction extends BaseAction<CoursePlan> {
         List<CoursePlan> list= coursePlanService.findAll();
         jsonObject=responseJson(pb,list,strs);
         return SUCCESS;
+    }
+
+    public String findCourse() throws IOException {
+        List<Course> list = coursePlanService.findCourse();
+        String[] strs1=new String[]{"coursePlan","teacher"};
+        JsonConfig config=new JsonConfig();
+        config.setExcludes(strs1);
+        JSONArray jsonArray=JSONArray.fromObject(list,config);
+        System.out.println(jsonArray.toString());
+        HttpServletResponse response=ServletActionContext.getResponse();
+//        response.setHeader("Content-type","text/json;charset=utf-8");
+//        response.setCharacterEncoding("utf-8");
+        response.setContentType("text/json;charset=utf-8");
+        response.getWriter().write(jsonArray.toString());
+        return NONE;
     }
 
     public String pageQuery() {

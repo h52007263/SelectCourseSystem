@@ -272,7 +272,6 @@ public class ArrangeClassUtil {
 
         //开始排课
         result=arrange(getCourses(),map);
-
         //排课结果
         pringTimeTable(result);
 

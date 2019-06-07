@@ -67,4 +67,9 @@ public class ClassroomServiceImpl extends BaseServiceImpl<Classroom> implements 
     public List<Classroom> vagueQuery1(Object condition, String field) {
         return classroomDao.vagueQuery1(condition,field);
     }
+
+    @Override
+    public List<Classroom> findAllAscByCap() {
+        return classroomDao.findAllAscByCap();
+    }
 }

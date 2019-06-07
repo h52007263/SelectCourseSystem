@@ -106,4 +106,38 @@ public class BaseDaoImpl<T> implements IBaseDao<T>{
         session.close();
         return t;
     }
+
+    @Override
+    public Integer findByMaxId() {
+        String hql="select MAX("+entityClass.getSimpleName().toLowerCase()+"Id) from "+entityClass.getSimpleName();
+        List<Integer> ids = (List<Integer>) hibernateTemplate.find(hql);
+        return ids.get(0);
+    }
+
+    @Override
+    public void batchSave(List<T> entitys) {
+        for(T entity:entitys)
+            hibernateTemplate.save(entity);
+    }
+
+    @Override
+    public void batchDelete(String major, String grade) {
+        String hql="delete from ArrangeResult where major = ?0 and grade = ?1";
+        Query query=sessionFactory.getCurrentSession().createQuery(hql);
+        query.setParameter(0,major);
+        query.setParameter(1,Integer.parseInt(grade));
+        query.executeUpdate();
+    }
+
+    //任意字段的去重查询
+    @Override
+    public List<Object> findByDistinct(Object field) {
+//        String sql="select distinct ?0 from "+entityClass.getSimpleName().toLowerCase();
+//        Query query=sessionFactory.getCurrentSession().createSQLQuery(sql);
+//        query.setParameter(0,field);
+
+        String hql="select distinct "+field+" from "+entityClass.getSimpleName();
+        Query query=sessionFactory.getCurrentSession().createQuery(hql);
+        return query.list();
+    }
 }

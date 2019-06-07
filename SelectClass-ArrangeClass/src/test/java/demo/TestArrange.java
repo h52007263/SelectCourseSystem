@@ -1,9 +1,22 @@
 package demo;
 
 import com.hzs.action.TestAction;
+import com.hzs.model.ArrangeResult;
+import com.hzs.model.Classroom;
+import com.hzs.model.Course;
+import com.hzs.model.CourseWish;
+import com.hzs.service.IClassroomService;
+import com.hzs.service.ICourseService;
+import com.hzs.service.ICourseWishService;
 import com.hzs.util.ArrangeClassUtil;
+import com.hzs.util.AutoArrangeUtil;
+import com.hzs.util.CompareUtil;
 import com.hzs.util.model.CourseCondition;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import java.util.*;
 
@@ -14,9 +27,84 @@ import java.util.*;
  * @date 2019/6/1 21:16
  */
 
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration(locations = "classpath:spring/spring.xml")
 public class TestArrange {
+
+    @Autowired
+    private ICourseWishService courseWishService;
+
+    @Autowired
+    private IClassroomService classroomService;
+
+    @Autowired
+    private ICourseService courseService;
+
     static int size=21;
     static protected String[] timeTable=new String[size];
+
+    @Test
+    public void test13(){
+        String major="软件工程";
+        String grade="2016";
+        //查询排的课程
+        List<Course> courses1=courseService.findAllByMajor(major,grade);
+        //得到课程的容量
+        Map<String,Integer> map1=new HashMap<>();
+        for(Course course:courses1)
+            map1.put(course.getCourseName(),course.getCapacity());
+
+        int capacity = map1.get("数据结构");
+
+        System.out.println(capacity);
+    }
+
+    @Test
+    public void test12(){
+
+        String major="软件工程";
+        String grade="2016";
+        List<CourseWish> courses=courseWishService.findAll();
+        String[] result=new String[21];
+        Arrays.fill(result,"0");
+
+        //权重最高的特殊的课程
+        Map<Integer,String> map=new HashMap<>();
+//        map.put(1,"专业设计");
+//        map.put(2,"专业设计");
+//        map.put(3,"专业设计");
+        map.put(11,"没有课程");
+        map.put(12,"没有课程");
+
+        //获取选课结果  课程时间 课程名称
+        result=AutoArrangeUtil.arrange(courses,map);
+
+        //输出结果
+        AutoArrangeUtil.pringTimeTable(result);
+
+        //String[] wishs, List<Classroom> classrooms, Map<String,Integer> map, String major, int grade
+
+        //查询教室
+        List<Classroom> classrooms=classroomService.findAllAscByCap();
+        //查询排的课程
+        List<Course> courses1=courseService.findAllByMajor(major,grade);
+        //得到课程的容量
+        Map<String,Integer> map1=new HashMap<>();
+        //得到课程的教师
+        Map<String,String> mapTeacher=new HashMap<>();
+        for(Course course:courses1)
+            map1.put(course.getCourseName(),course.getCapacity());
+        for(Course course:courses1){
+            mapTeacher.put(course.getCourseName(),course.getTeacher().getName());
+        }
+        //获取最后的结果
+        List<ArrangeResult> resultList = AutoArrangeUtil.fillRoom(result,classrooms,map1,mapTeacher,major,Integer.parseInt(grade));
+
+        resultList.stream().forEach(
+                arrangeResult -> System.out.println(arrangeResult)
+        );
+
+    }
 
     @Test
     public void test11(){

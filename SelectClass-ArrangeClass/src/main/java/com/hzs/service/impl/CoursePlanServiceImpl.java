@@ -1,6 +1,7 @@
 package com.hzs.service.impl;
 
 import com.hzs.dao.ICoursePlanDao;
+import com.hzs.model.Course;
 import com.hzs.model.CoursePlan;
 import com.hzs.model.PageBean;
 import com.hzs.service.ICoursePlanService;
@@ -84,5 +85,15 @@ public class CoursePlanServiceImpl extends BaseServiceImpl<CoursePlan> implement
     @Override
     public void update(CoursePlan model, String courseName) {
         coursePlanDao.update(model,courseName);
+    }
+
+    @Override
+    public List<CoursePlan> vagueQueryByMajor(String major, String grade) {
+        return coursePlanDao.vagueQueryByMajor(major,grade);
+    }
+
+    @Override
+    public List<Course> findCourse() {
+        return coursePlanDao.findCourse();
     }
 }

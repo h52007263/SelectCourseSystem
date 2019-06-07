@@ -32,18 +32,19 @@
     </package>
 
     <package name="ArrangeClass" extends="struts-default,json-default" namespace="/">
+
         <action name="courseAction_*" class="com.hzs.action.CourseAction" method="{1}">
             <result name="success" type="json">
                 <param name="root">jsonObject</param>
             </result>
-            <allowed-methods>save,delete,update,find,findAll,pageQuery,vagueQuery</allowed-methods>
+            <allowed-methods>findAllByThree,save,delete,update,find,findAll,pageQuery,vagueQuery,findByDifMajor,findByDifGrade</allowed-methods>
         </action>
 
         <action name="coursePlanAction_*" class="com.hzs.action.CoursePlanAction" method="{1}">
             <result name="success" type="json">
                 <param name="root">jsonObject</param>
             </result>
-            <allowed-methods>save,delete,update,find,findAll,pageQuery,vagueQuery,findByField</allowed-methods>
+            <allowed-methods>findCourse,save,delete,update,find,findAll,pageQuery,vagueQuery,findByField</allowed-methods>
         </action>
 
         <action name="classroomAction_*" class="com.hzs.action.ClassroomAction" method="{1}">
@@ -65,6 +66,27 @@
                 <param name="root">jsonObject</param>
             </result>
             <allowed-methods>save,delete,update,find,findAll,pageQuery,vagueQuery,findByField</allowed-methods>
+        </action>
+
+        <action name="messageAction_*" class="com.hzs.action.MessageAction" method="{1}">
+            <result name="success" type="json">
+                <param name="root">jsonObject</param>
+            </result>
+            <allowed-methods>delete,findAll</allowed-methods>
+        </action>
+
+        <action name="courseWishAction_*" class="com.hzs.action.CourseWishAction" method="{1}">
+            <result name="success" type="json">
+                <param name="root">jsonObject</param>
+            </result>
+            <allowed-methods>save,delete,update,findAll</allowed-methods>
+        </action>
+
+        <action name="arrangeResultAction_*" class="com.hzs.action.ArrangResultAction" method="{1}">
+            <result name="success" type="json">
+                <param name="root">jsonObject</param>
+            </result>
+            <allowed-methods>batchSave,findAll</allowed-methods>
         </action>
 
     </package>
