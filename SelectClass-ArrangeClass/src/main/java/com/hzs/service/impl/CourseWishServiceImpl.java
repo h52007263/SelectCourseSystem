@@ -38,7 +38,10 @@ public class CourseWishServiceImpl extends BaseServiceImpl<CourseWish> implement
 
     @Override
     public void update(CourseWish entity) {
-        courseWishDao.update(entity);
+        CourseWish courseWish = courseWishDao.find(entity.getCourseId());
+        courseWish.setAmpm(entity.getAmpm());
+        courseWish.setJoins(entity.getJoins());
+        courseWishDao.update(courseWish);
     }
 
     @Override
@@ -69,5 +72,20 @@ public class CourseWishServiceImpl extends BaseServiceImpl<CourseWish> implement
     @Override
     public int findByMaxId(){
        return courseWishDao.findByMaxId();
+    }
+
+    @Override
+    public List<CourseWish> vagueQueryByMajor(String major, String grade) {
+        return courseWishDao.vagueQueryByMajor(major,grade);
+    }
+
+    @Override
+    public void updatePure(CourseWish courseWish) {
+        courseWishDao.updatePure(courseWish);
+    }
+
+    @Override
+    public CourseWish findByField(Object condition, String field) {
+        return courseWishDao.findByField(condition,field);
     }
 }

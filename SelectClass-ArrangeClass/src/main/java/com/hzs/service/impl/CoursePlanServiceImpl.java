@@ -1,10 +1,14 @@
 package com.hzs.service.impl;
 
+import com.hzs.dao.ICourseDao;
 import com.hzs.dao.ICoursePlanDao;
+import com.hzs.dao.ICourseWishDao;
 import com.hzs.model.Course;
 import com.hzs.model.CoursePlan;
+import com.hzs.model.CourseWish;
 import com.hzs.model.PageBean;
 import com.hzs.service.ICoursePlanService;
+import com.hzs.service.ICourseWishService;
 import com.hzs.service.base.BaseServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -27,6 +31,15 @@ public class CoursePlanServiceImpl extends BaseServiceImpl<CoursePlan> implement
     @Autowired
     private ICoursePlanDao coursePlanDao;
 
+    @Autowired
+    private ICourseWishDao courseWishDao;
+
+    @Autowired
+    private ICourseWishService courseWishService;
+
+    @Autowired
+    private ICourseDao courseDao;
+
     @Override
     public void save(CoursePlan entity) {
         coursePlanDao.save(entity);
@@ -34,7 +47,14 @@ public class CoursePlanServiceImpl extends BaseServiceImpl<CoursePlan> implement
 
     @Override
     public void delete(CoursePlan entity) {
+//        int courseId=entity.getCourse().getCourseId();
         coursePlanDao.delete(entity);
+//        CourseWish courseWish=courseWishDao.find(courseId);
+//        courseWish.setCourseId(0);
+//        courseWish.setWeight(0);
+//        courseWish.setSection(0);
+//        courseWish.setWeight(0);
+//        courseWishDao.update(courseWish);
     }
 
     @Override
@@ -78,12 +98,34 @@ public class CoursePlanServiceImpl extends BaseServiceImpl<CoursePlan> implement
     }
 
     @Override
-    public void save(CoursePlan entity, int courseId) {
-        coursePlanDao.save(entity,courseId);
+    public void save(CoursePlan entity, String major,String courseName) {
+
+        List<Course> courses = courseDao.findByNameMajor(major,courseName);
+        Course course=courses.get(0);
+        entity.setCourse(course);
+        //添加课程计划
+        coursePlanDao.save(entity,courseName);
+
+
+        //添加课程意向
+        CourseWish courseWish=new CourseWish();
+        courseWish.setCourse(course);
+        courseWish.setCourseId(course.getCourseId());
+        courseWish.setCourseName(course.getCourseName());
+        //注入0
+        courseWish.setWeight(entity.getWeight());
+        courseWish.setAmpm(12);
+        courseWish.setJoins(0);
+        courseWish.setSection(entity.getSection());
+        courseWishDao.save(courseWish);
     }
 
     @Override
     public void update(CoursePlan model, String courseName) {
+        CourseWish courseWish = courseWishDao.findByField(courseName,"courseName");
+        courseWish.setWeight(model.getWeight());
+        courseWish.setSection(model.getSection());
+        courseWishService.update(courseWish);
         coursePlanDao.update(model,courseName);
     }
 
@@ -95,5 +137,10 @@ public class CoursePlanServiceImpl extends BaseServiceImpl<CoursePlan> implement
     @Override
     public List<Course> findCourse() {
         return coursePlanDao.findCourse();
+    }
+
+    @Override
+    public void updateCascade(CoursePlan coursePlan) {
+        coursePlanDao.updateCascade(coursePlan);
     }
 }

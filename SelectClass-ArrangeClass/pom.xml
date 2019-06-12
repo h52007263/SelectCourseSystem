@@ -29,6 +29,7 @@
             <version>1.0-SNAPSHOT</version>
         </dependency>
 
+
         <dependency>
             <groupId>commons-lang</groupId>
             <artifactId>commons-lang</artifactId>
@@ -82,6 +83,26 @@
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
             <version>2.9.8</version>
+        </dependency>
+
+        <!--redis session jar包-->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-pool2</artifactId>
+            <version>2.4.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+            <version>2.9.0</version>
+        </dependency>
+
+        <!--管理session-->
+        <dependency>
+            <groupId>com.tomcat_redis</groupId>
+            <artifactId>tomcat-redis-session-manager</artifactId>
+            <version>1.2</version>
         </dependency>
 
     </dependencies>

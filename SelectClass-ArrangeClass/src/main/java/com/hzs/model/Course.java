@@ -27,6 +27,9 @@ public class Course {
     //课程 一对一  课程计划
     private CoursePlan coursePlan;
 
+    //课程  一对一  课程意向
+    private  CourseWish courseWish;
+
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "teacher_id")
     public Teacher getTeacher() {
@@ -44,6 +47,15 @@ public class Course {
 
     public void setCoursePlan(CoursePlan coursePlan) {
         this.coursePlan = coursePlan;
+    }
+
+    @OneToOne(mappedBy = "course",cascade = CascadeType.ALL)
+    public CourseWish getCourseWish() {
+        return courseWish;
+    }
+
+    public void setCourseWish(CourseWish courseWish) {
+        this.courseWish = courseWish;
     }
 
     @Id

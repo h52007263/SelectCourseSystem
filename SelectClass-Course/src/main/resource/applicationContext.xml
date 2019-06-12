@@ -74,7 +74,7 @@
         <property name="redisTemplate" ref="redisTemplate" />
     </bean>
 
-    <!--<context:component-scan base-package="com.hzs.utils"></context:component-scan>-->
+    <context:component-scan base-package="com.hzs.utils"></context:component-scan>
 
 
 </beans>

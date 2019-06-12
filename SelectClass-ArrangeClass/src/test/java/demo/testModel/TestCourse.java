@@ -26,10 +26,39 @@ public class TestCourse {
     @Autowired
     private ICourseService courseService;
 
+    //通过专业查询课程计划中没有加入的课程
+    @Test
+    public void testPlanCourse(){
+       List<Course> courses = courseService.findNoCourseByMajor("计算机");
+       courses.forEach(
+               course -> System.out.println(course)
+       );
+    }
+
+    @Test
+    public void test8(){
+        List<Course> courses = courseService.findByNameMajor("车辆工程","高等数学");
+        courses.forEach(
+                course -> System.out.println(course)
+        );
+    }
+
+    @Test
+    public void test7(){
+        Course course = courseService.findByField("测试课程","courseName");
+    }
+
+    @Test
+    public void test6(){
+        List<Course> courses = courseService.findAll();
+        courses.forEach(course -> System.out.println(course.getCourseWish().getCourse()));
+
+    }
+
     @Test
     public void test5(){
 //        courseService.findAllByThree("软件工程","2016","courseProperty","必修");
-        courseService.findAllByThree("","","courseName","计算机")
+        courseService.findAllByThree("软件工程","2016","courseName","")
                 .stream()
                 .forEach(course -> System.out.println(course));
 

@@ -6,6 +6,7 @@ import com.hzs.service.IArrangeResultService;
 import net.sf.json.JSONObject;
 import org.apache.struts2.ServletActionContext;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpRequest;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
@@ -35,11 +36,12 @@ public class ArrangResultAction extends BaseAction<ArrangeResult> {
         HttpServletRequest request=ServletActionContext.getRequest();
         String major = request.getParameter("major");
         String grade = request.getParameter("grade");
+        System.out.println("专业和年级：  "+major+" "+grade);
 
         //删除当前专业和年级已安排的课程，后面重新排课
         arrangeResultService.batchDelete(major,grade);
 
-        Map<Integer,String> map=new HashMap<>();
+        Map<Integer,String> map=new HashMap<Integer, String>();
         //获取排课结果
         List<ArrangeResult> list = arrangeResultService.generateResult(map,major,grade);
 
@@ -68,6 +70,15 @@ public class ArrangResultAction extends BaseAction<ArrangeResult> {
     public String findAll() {
         List<ArrangeResult> list= arrangeResultService.findAll();
         jsonObject=responseJson(pb,list,strs);
+        return SUCCESS;
+    }
+
+    public String findAllByMajor(){
+        HttpServletRequest request=ServletActionContext.getRequest();
+        String major = request.getParameter("major");
+        String grade = request.getParameter("grade");
+        List<ArrangeResult> arrangeResults = arrangeResultService.findAllByMajor(major,grade);
+        jsonObject=responseJson(pb,arrangeResults,strs);
         return SUCCESS;
     }
 

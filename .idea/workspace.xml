@@ -1,0 +1,1548 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="SelectClass-ArrangeClass:war" />
+      <artifact name="SelectClass-ArrangeClass:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9acdadb7-1014-4e2c-b409-2f325e263128" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/test/java/demo/testModel/CourseWish_Course.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/SelectClass_ArrangeClass_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/SelectClass_ArrangeClass_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/action/ArrangResultAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/action/ArrangResultAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/action/CourseAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/action/CourseAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/action/CoursePlanAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/action/CoursePlanAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/action/CourseWishAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/action/CourseWishAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/dao/IArrangeResultDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/dao/IArrangeResultDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/dao/ICourseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/dao/ICourseDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/dao/ICoursePlanDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/dao/ICoursePlanDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/dao/ICourseWishDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/dao/ICourseWishDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/dao/base/BaseDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/dao/base/BaseDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/dao/impl/ArrangeResultDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/dao/impl/ArrangeResultDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/dao/impl/CourseDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/dao/impl/CourseDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/dao/impl/CoursePlanDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/dao/impl/CoursePlanDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/dao/impl/CourseWishDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/dao/impl/CourseWishDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/model/ArrangeResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/model/ArrangeResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/model/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/model/Course.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/model/CourseWish.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/model/CourseWish.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/service/IArrangeResultService.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/service/IArrangeResultService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/service/ICoursePlanService.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/service/ICoursePlanService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/service/ICourseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/service/ICourseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/service/ICourseWishService.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/service/ICourseWishService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/service/impl/ArrangeResultServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/service/impl/ArrangeResultServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/service/impl/CoursePlanServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/service/impl/CoursePlanServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/service/impl/CourseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/service/impl/CourseServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/service/impl/CourseWishServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/service/impl/CourseWishServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/util/AutoArrangeUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/util/AutoArrangeUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/util/SimpleCORSFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/util/SimpleCORSFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/resource/spring/spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/resource/spring/spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/resource/struts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/resource/struts.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/test/java/demo/TestArrange.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/test/java/demo/TestArrange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/test/java/demo/TestConn.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/test/java/demo/TestConn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/test/java/demo/testModel/ArrangeRuleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/test/java/demo/testModel/ArrangeRuleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/test/java/demo/testModel/TestArrangeResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/test/java/demo/testModel/TestArrangeResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/test/java/demo/testModel/TestCourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/test/java/demo/testModel/TestCourse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/test/java/demo/testModel/TestCoursePlan.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/test/java/demo/testModel/TestCoursePlan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/test/java/demo/testModel/TestCourseWish.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/test/java/demo/testModel/TestCourseWish.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/classes/META-INF/SelectClass-ArrangeClass.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/classes/com/hzs/action/CourseAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/classes/com/hzs/action/CourseAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/classes/com/hzs/action/CoursePlanAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/classes/com/hzs/action/CoursePlanAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/classes/com/hzs/dao/ICourseDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/classes/com/hzs/dao/ICourseDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/classes/com/hzs/dao/ICoursePlanDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/classes/com/hzs/dao/ICoursePlanDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/classes/com/hzs/dao/base/BaseDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/classes/com/hzs/dao/base/BaseDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/classes/com/hzs/dao/impl/CourseDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/classes/com/hzs/dao/impl/CourseDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/classes/com/hzs/dao/impl/CoursePlanDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/classes/com/hzs/dao/impl/CoursePlanDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/classes/com/hzs/model/Course.class" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/classes/com/hzs/model/Course.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/classes/com/hzs/service/ICoursePlanService.class" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/classes/com/hzs/service/ICoursePlanService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/classes/com/hzs/service/ICourseService.class" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/classes/com/hzs/service/ICourseService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/classes/com/hzs/service/impl/CoursePlanServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/classes/com/hzs/service/impl/CoursePlanServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/classes/com/hzs/service/impl/CourseServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/classes/com/hzs/service/impl/CourseServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/classes/com/hzs/util/SimpleCORSFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/classes/com/hzs/util/SimpleCORSFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/classes/spring/spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/classes/spring/spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/classes/struts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/classes/struts.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/student/WEB-INF/classes/META-INF/SelectClass-ArrangeClass.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/student/WEB-INF/classes/com/hzs/action/CourseAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/student/WEB-INF/classes/com/hzs/action/CourseAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/student/WEB-INF/classes/com/hzs/action/CoursePlanAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/student/WEB-INF/classes/com/hzs/action/CoursePlanAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/student/WEB-INF/classes/com/hzs/dao/ICourseDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/student/WEB-INF/classes/com/hzs/dao/ICourseDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/student/WEB-INF/classes/com/hzs/dao/ICoursePlanDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/student/WEB-INF/classes/com/hzs/dao/ICoursePlanDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/student/WEB-INF/classes/com/hzs/dao/base/BaseDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/student/WEB-INF/classes/com/hzs/dao/base/BaseDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/student/WEB-INF/classes/com/hzs/dao/impl/CourseDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/student/WEB-INF/classes/com/hzs/dao/impl/CourseDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/student/WEB-INF/classes/com/hzs/dao/impl/CoursePlanDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/student/WEB-INF/classes/com/hzs/dao/impl/CoursePlanDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/student/WEB-INF/classes/com/hzs/model/Course.class" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/student/WEB-INF/classes/com/hzs/model/Course.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/student/WEB-INF/classes/com/hzs/service/ICoursePlanService.class" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/student/WEB-INF/classes/com/hzs/service/ICoursePlanService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/student/WEB-INF/classes/com/hzs/service/ICourseService.class" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/student/WEB-INF/classes/com/hzs/service/ICourseService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/student/WEB-INF/classes/com/hzs/service/impl/CoursePlanServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/student/WEB-INF/classes/com/hzs/service/impl/CoursePlanServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/student/WEB-INF/classes/com/hzs/service/impl/CourseServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/student/WEB-INF/classes/com/hzs/service/impl/CourseServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/student/WEB-INF/classes/com/hzs/util/SimpleCORSFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/student/WEB-INF/classes/com/hzs/util/SimpleCORSFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/student/WEB-INF/classes/spring/spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/student/WEB-INF/classes/spring/spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/student/WEB-INF/classes/struts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/student/WEB-INF/classes/struts.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/student/WEB-INF/lib/SelectClass-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/student/WEB-INF/lib/SelectClass-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/test-classes/demo/TestArrange.class" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/test-classes/demo/TestArrange.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/test-classes/demo/TestConn.class" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/test-classes/demo/TestConn.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/test-classes/demo/testModel/ArrangeRuleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/test-classes/demo/testModel/ArrangeRuleTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-Course/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-Course/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-Course/src/main/java/com/hzs/utils/RedisTestSpring.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-Course/src/main/java/com/hzs/utils/RedisTestSpring.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-Course/src/main/java/com/hzs/utils/RedisUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-Course/src/main/java/com/hzs/utils/RedisUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-Course/src/main/resource/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-Course/src/main/resource/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass-Course/src/test/com/redis/TestSpringRedis.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-Course/src/test/com/redis/TestSpringRedis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectClass.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/SelectClass-ArrangeClass/target/" />
+    <ignored path="$PROJECT_DIR$/SelectClass-Course/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="selectclass@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="selectclass@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="selectclass@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="selectclass: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="SelectClass" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SelectClass-Course/src/test/com/redis/TestSpringRedis.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="212">
+              <caret line="55" column="5" lean-forward="true" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SelectClass-Course/src/test/com/test/LuceneDemo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SelectClass-Course/src/test/com/redis/TestRedisHashComman.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="32" column="41" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SelectClass-Course/src/main/resource/applicationContext.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="38" column="27" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
+              <folding>
+                <element signature="n#bean#0;n#beans#0;n#!!top" />
+                <element signature="n#bean#1;n#beans#0;n#!!top" />
+                <element signature="n#bean#2;n#beans#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jsp File" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>List&lt;String&gt;</find>
+      <find>redisTemplate</find>
+      <find>pmam</find>
+      <find>scanJoin</find>
+      <find>date</find>
+      <find>get</find>
+      <find>equals</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="hzs" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/dao/impl/ClassroomDaoImpl.java" />
+        <option value="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/service/impl/ArrangeRuleServiceImpl.java" />
+        <option value="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/dao/base/IBaseDao.java" />
+        <option value="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/service/base/IBaseService.java" />
+        <option value="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/service/base/BaseServiceImpl.java" />
+        <option value="$PROJECT_DIR$/SelectClass-ArrangeClass/src/test/java/demo/testModel/User.java" />
+        <option value="$PROJECT_DIR$/SelectClass-ArrangeClass/src/test/java/demo/testModel/UserTest.java" />
+        <option value="$PROJECT_DIR$/SelectClass-ArrangeClass/src/test/java/demo/testModel/TestTeacher.java" />
+        <option value="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/model/Course.java" />
+        <option value="$PROJECT_DIR$/SelectClass-ArrangeClass/src/test/java/demo/testModel/CourseWish_Course.java" />
+        <option value="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/model/CourseWish.java" />
+        <option value="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/action/CourseWishAction.java" />
+        <option value="$PROJECT_DIR$/SelectClass-ArrangeClass/src/test/java/demo/TestArrange.java" />
+        <option value="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/dao/ICourseWishDao.java" />
+        <option value="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/dao/impl/CourseWishDaoImpl.java" />
+        <option value="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/service/ICourseWishService.java" />
+        <option value="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/service/impl/CourseWishServiceImpl.java" />
+        <option value="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/resource/spring/spring.xml" />
+        <option value="$PROJECT_DIR$/SelectClass-ArrangeClass/src/test/java/demo/testModel/ArrangeRuleTest.java" />
+        <option value="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/dao/impl/ArrangeResultDaoImpl.java" />
+        <option value="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/dao/IArrangeResultDao.java" />
+        <option value="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/service/IArrangeResultService.java" />
+        <option value="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/service/impl/ArrangeResultServiceImpl.java" />
+        <option value="$PROJECT_DIR$/SelectClass-ArrangeClass/src/test/java/demo/testModel/TestArrangeResult.java" />
+        <option value="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/action/ArrangResultAction.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/util/SimpleCORSFilter.java" />
+        <option value="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/dao/ICoursePlanDao.java" />
+        <option value="$PROJECT_DIR$/SelectClass-ArrangeClass/pom.xml" />
+        <option value="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/util/AutoArrangeUtil.java" />
+        <option value="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/dao/ICourseDao.java" />
+        <option value="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/service/ICourseService.java" />
+        <option value="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/service/impl/CourseServiceImpl.java" />
+        <option value="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/dao/impl/CourseDaoImpl.java" />
+        <option value="$PROJECT_DIR$/SelectClass-ArrangeClass/src/test/java/demo/testModel/TestCourse.java" />
+        <option value="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/action/CourseAction.java" />
+        <option value="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/resource/struts.xml" />
+        <option value="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/service/ICoursePlanService.java" />
+        <option value="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/action/CoursePlanAction.java" />
+        <option value="$PROJECT_DIR$/SelectClass-ArrangeClass/src/test/java/demo/testModel/TestCourseWish.java" />
+        <option value="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/dao/base/BaseDaoImpl.java" />
+        <option value="$PROJECT_DIR$/SelectClass-ArrangeClass/src/test/java/demo/testModel/TestCoursePlan.java" />
+        <option value="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/service/impl/CoursePlanServiceImpl.java" />
+        <option value="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/dao/impl/CoursePlanDaoImpl.java" />
+        <option value="$PROJECT_DIR$/SelectClass-ArrangeClass/src/test/java/demo/TestConn.java" />
+        <option value="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/model/ArrangeResult.java" />
+        <option value="$PROJECT_DIR$/SelectClass-Course/src/main/java/com/hzs/utils/RedisTestSpring.java" />
+        <option value="$PROJECT_DIR$/SelectClass-Course/src/main/resource/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/SelectClass-Course/src/main/java/com/hzs/utils/RedisUtil.java" />
+        <option value="$PROJECT_DIR$/SelectClass-Course/pom.xml" />
+        <option value="$PROJECT_DIR$/SelectClass-Course/src/test/com/redis/TestSpringRedis.java" />
+      </list>
+    </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/hzsWare/apache-maven-3.5.0" />
+        <option name="userSettingsFile" value="D:\hzsWare\apache-maven-3.5.0\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="SelectClass Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="SelectClass Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="SelectClass-ArrangeClass Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="SelectClass-ArrangeClass Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="SelectClass-Course Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="SelectClass-Course Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="780" />
+    <option name="width" value="1190" />
+    <option name="height" value="1040" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="SelectClass" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SelectClass" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SelectClass" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SelectClass" type="462c0819:PsiDirectoryNode" />
+              <item name="SelectClass-ArrangeClass" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SelectClass" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SelectClass" type="462c0819:PsiDirectoryNode" />
+              <item name="SelectClass-ArrangeClass" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SelectClass" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SelectClass" type="462c0819:PsiDirectoryNode" />
+              <item name="SelectClass-ArrangeClass" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SelectClass" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SelectClass" type="462c0819:PsiDirectoryNode" />
+              <item name="SelectClass-ArrangeClass" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SelectClass" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SelectClass" type="462c0819:PsiDirectoryNode" />
+              <item name="SelectClass-ArrangeClass" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hzs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SelectClass" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SelectClass" type="462c0819:PsiDirectoryNode" />
+              <item name="SelectClass-ArrangeClass" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hzs" type="462c0819:PsiDirectoryNode" />
+              <item name="action" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SelectClass" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SelectClass" type="462c0819:PsiDirectoryNode" />
+              <item name="SelectClass-ArrangeClass" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SelectClass" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SelectClass" type="462c0819:PsiDirectoryNode" />
+              <item name="SelectClass-Course" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SelectClass" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SelectClass" type="462c0819:PsiDirectoryNode" />
+              <item name="SelectClass-Course" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SelectClass" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SelectClass" type="462c0819:PsiDirectoryNode" />
+              <item name="SelectClass-Course" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SelectClass" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SelectClass" type="462c0819:PsiDirectoryNode" />
+              <item name="SelectClass-Course" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SelectClass" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SelectClass" type="462c0819:PsiDirectoryNode" />
+              <item name="SelectClass-Course" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SelectClass" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SelectClass" type="462c0819:PsiDirectoryNode" />
+              <item name="SelectClass-Course" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resource" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SelectClass" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SelectClass" type="462c0819:PsiDirectoryNode" />
+              <item name="SelectClass-Course" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SelectClass" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SelectClass" type="462c0819:PsiDirectoryNode" />
+              <item name="SelectClass-Course" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SelectClass" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SelectClass" type="462c0819:PsiDirectoryNode" />
+              <item name="SelectClass-Course" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="JPA.DatabaseSchemaImportDialog" value="176d59c9-82cb-4b65-9b36-b854183ea525" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560330193442" />
+    <property name="database.console.LAST_STATE" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.1638756" />
+    <property name="project.structure.side.proportion" value="0.2778561" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\HM\project1\SelectClass\SelectClass-Course\src\main\resource" />
+      <recent name="E:\HM\project1\SelectClass\SelectClass-Course\src\main\resource\db" />
+      <recent name="E:\HM\project\SelectClass\SelectClass-Course\src\main\resource" />
+      <recent name="E:\HM\project\SelectClass\SelectClass-ArrangeClass\src\main\webapp" />
+    </key>
+    <key name="ImportMappingsDialog.RecentPackages">
+      <recent name="com.hzs.model" />
+      <recent name="com.model" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="demo.testModel" />
+      <recent name="com.hzs.util" />
+      <recent name="demo.testService" />
+      <recent name="com.hzs.model" />
+      <recent name="com.hzs.utils" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\HM\project\SelectClass\SelectClass-ArrangeClass\src\main\java\com\hzs\model" />
+      <recent name="E:\HM\project\SelectClass\SelectClass-Course\src" />
+      <recent name="E:\HM\project\SelectClass\SelectClass-ArrangeClass\src\main\webapp\WEB-INF\page\js" />
+      <recent name="E:\HM\project\SelectClass\SelectClass-ArrangeClass\src\main\webapp\WEB-INF\page\html" />
+      <recent name="E:\HM\project\SelectClass\SelectClass-ArrangeClass\src\main\resource" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.TestSpringRedis.test1">
+    <configuration name="RedisTestSpring" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.hzs.utils.RedisTestSpring" />
+      <module name="SelectClass-Course" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hzs.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestConn.testUpdate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SelectClass-ArrangeClass" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="demo" />
+      <option name="MAIN_CLASS_NAME" value="demo.TestConn" />
+      <option name="METHOD_NAME" value="testUpdate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestCoursePlan.testAddCascade" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SelectClass-ArrangeClass" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="demo.testModel.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="demo.testModel" />
+      <option name="MAIN_CLASS_NAME" value="demo.testModel.TestCoursePlan" />
+      <option name="METHOD_NAME" value="testAddCascade" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestCoursePlan.testVagueByName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SelectClass-ArrangeClass" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="demo.testModel.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="demo.testModel" />
+      <option name="MAIN_CLASS_NAME" value="demo.testModel.TestCoursePlan" />
+      <option name="METHOD_NAME" value="testVagueByName" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestSpringRedis.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SelectClass-Course" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.redis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.redis" />
+      <option name="MAIN_CLASS_NAME" value="com.redis.TestSpringRedis" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 8 8111" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8 8111" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="COMMON_VM_ARGUMENTS" value="-server -XX:PermSize=128M -XX:MaxPermSize=256m" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="SelectClass-ArrangeClass:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Tomcat_8_8222_SelectClass" />
+        <option name="JNDI_PORT" value="1199" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="64581" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="SelectClassArrangeClass:war exploded" />
+          <artifact name="SelectClass-ArrangeClass:war" />
+          <artifact name="SelectClass-ArrangeClass:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8 8222" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="_SelectClass" />
+        <option name="HTTP_PORT" value="8080" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="64581" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="SelectClassArrangeClass:war exploded" />
+          <artifact name="SelectClass-ArrangeClass:war" />
+          <artifact name="SelectClass-ArrangeClass:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.TestCoursePlan.testVagueByName" />
+      <item itemvalue="JUnit.TestCoursePlan.testAddCascade" />
+      <item itemvalue="JUnit.TestConn.testUpdate" />
+      <item itemvalue="Tomcat Server.Tomcat 8 8111" />
+      <item itemvalue="Application.RedisTestSpring" />
+      <item itemvalue="JUnit.TestSpringRedis.test1" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TestSpringRedis.test1" />
+        <item itemvalue="Application.RedisTestSpring" />
+        <item itemvalue="JUnit.TestConn.testUpdate" />
+        <item itemvalue="JUnit.TestCoursePlan.testAddCascade" />
+        <item itemvalue="JUnit.TestCoursePlan.testVagueByName" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9acdadb7-1014-4e2c-b409-2f325e263128" name="Default Changelist" comment="" />
+      <created>1558168763462</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1558168763462</updated>
+      <workItem from="1558168768441" duration="5820000" />
+      <workItem from="1558227200871" duration="4299000" />
+      <workItem from="1558588480684" duration="19128000" />
+      <workItem from="1558609766077" duration="8140000" />
+      <workItem from="1558660534575" duration="6815000" />
+      <workItem from="1558779930262" duration="10370000" />
+      <workItem from="1558870858500" duration="4819000" />
+      <workItem from="1558921063835" duration="103000" />
+      <workItem from="1558938320910" duration="17883000" />
+      <workItem from="1559005616722" duration="9419000" />
+      <workItem from="1559023132192" duration="4059000" />
+      <workItem from="1559036372127" duration="9669000" />
+      <workItem from="1559105274256" duration="11274000" />
+      <workItem from="1559175881937" duration="5793000" />
+      <workItem from="1559193706487" duration="7012000" />
+      <workItem from="1559209619246" duration="9484000" />
+      <workItem from="1559263994594" duration="6084000" />
+      <workItem from="1559282683825" duration="19455000" />
+      <workItem from="1559356142000" duration="16724000" />
+      <workItem from="1559439215985" duration="30386000" />
+      <workItem from="1559521261371" duration="15310000" />
+      <workItem from="1559613192765" duration="12884000" />
+      <workItem from="1559652924376" duration="1665000" />
+      <workItem from="1559697485815" duration="20211000" />
+      <workItem from="1559780961225" duration="38000" />
+      <workItem from="1559805055103" duration="23591000" />
+      <workItem from="1559873582018" duration="25765000" />
+      <workItem from="1559956170580" duration="12252000" />
+      <workItem from="1559984958474" duration="19019000" />
+      <workItem from="1560045688135" duration="541000" />
+      <workItem from="1560046281653" duration="27000" />
+      <workItem from="1560046369181" duration="4079000" />
+      <workItem from="1560050878400" duration="3953000" />
+      <workItem from="1560057738293" duration="1801000" />
+      <workItem from="1560062975600" duration="2797000" />
+      <workItem from="1560082358550" duration="3739000" />
+      <workItem from="1560095597556" duration="1688000" />
+      <workItem from="1560126342163" duration="9203000" />
+      <workItem from="1560179028540" duration="25000" />
+      <workItem from="1560184389073" duration="1438000" />
+      <workItem from="1560257741979" duration="12876000" />
+      <workItem from="1560301424321" duration="11307000" />
+    </task>
+    <task id="LOCAL-00001" summary="课程信息管理系统">
+      <created>1559522913524</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1559522913524</updated>
+    </task>
+    <task id="LOCAL-00002" summary="增加课程意向类【CourseWish】的部分功能&#10;增加排课结果类【ArrangeResult】的后端功能">
+      <created>1559917756377</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1559917756378</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="TestSpringRedis_test1 - 2019.06.12 at 16h 12m 14s.xml">
+      <configuration name="TestSpringRedis.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestSpringRedis_test1 - 2019.06.12 at 16h 15m 48s.xml">
+      <configuration name="TestSpringRedis.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestSpringRedis_test1 - 2019.06.12 at 16h 16m 02s.xml">
+      <configuration name="TestSpringRedis.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestSpringRedis_test1 - 2019.06.12 at 16h 16m 43s.xml">
+      <configuration name="TestSpringRedis.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestSpringRedis_test1 - 2019.06.12 at 16h 19m 42s.xml">
+      <configuration name="TestSpringRedis.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestSpringRedis_test1 - 2019.06.12 at 16h 20m 29s.xml">
+      <configuration name="TestSpringRedis.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestSpringRedis_test1 - 2019.06.12 at 16h 22m 36s.xml">
+      <configuration name="TestSpringRedis.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestSpringRedis_test1 - 2019.06.12 at 16h 23m 57s.xml">
+      <configuration name="TestSpringRedis.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestSpringRedis_test1 - 2019.06.12 at 16h 25m 04s.xml">
+      <configuration name="TestSpringRedis.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestSpringRedis_test1 - 2019.06.12 at 16h 25m 57s.xml">
+      <configuration name="TestSpringRedis.test1" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="390945000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8448023" visible="true" weight="0.30227882" />
+      <window_info id="Designer" order="1" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" sideWeight="0.38340807" side_tool="true" weight="0.25938338" />
+      <window_info id="Web" order="6" side_tool="true" />
+      <window_info id="Persistence" order="7" sideWeight="0.15519765" side_tool="true" weight="0.32908848" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.5175953" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.57841825" visible="true" weight="0.38269794" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39970717" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.329429" />
+      <window_info anchor="bottom" id="REST Client" order="7" weight="0.32844576" />
+      <window_info anchor="bottom" id="Spring" order="8" weight="0.32844576" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.329429" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.42158177" side_tool="true" weight="0.37096775" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.24486804" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.32844576" />
+      <window_info anchor="bottom" id="Database Changes" order="14" weight="0.32844576" />
+      <window_info anchor="bottom" id="Database Console" order="15" weight="0.329429" />
+      <window_info anchor="bottom" id="Version Control" order="16" weight="0.32991204" />
+      <window_info anchor="bottom" id="Application Servers" order="17" weight="0.329429" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.18364611" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" weight="0.20107238" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Structure" order="9" side_tool="true" weight="0.15281501" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.81112736" visible="true" weight="0.2419571" />
+      <window_info id="Designer" order="1" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Web" order="6" side_tool="true" />
+      <window_info id="Persistence" order="7" sideWeight="0.18887262" side_tool="true" weight="0.28619304" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.27232796" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.329429" />
+      <window_info anchor="bottom" id="REST Client" order="7" weight="0.329429" />
+      <window_info anchor="bottom" id="Spring" order="8" weight="0.329429" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.329429" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.53147876" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.329429" />
+      <window_info anchor="bottom" id="Database Changes" order="14" />
+      <window_info anchor="bottom" id="Version Control" order="15" />
+      <window_info anchor="bottom" id="Application Servers" order="16" weight="0.329429" />
+      <window_info anchor="bottom" id="Database Console" order="17" weight="0.329429" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.18364611" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" weight="0.20107238" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Structure" order="9" side_tool="true" weight="0.10589813" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="课程信息管理系统" />
+    <MESSAGE value="增加课程意向类【CourseWish】的部分功能&#10;增加排课结果类【ArrangeResult】的后端功能" />
+    <MESSAGE value="完善课程意向类【CourseWish】的功能&#10;完善课程计划【coursePlan】级联操作的一些问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="完善课程意向类【CourseWish】的功能&#10;完善课程计划【coursePlan】级联操作的一些问题" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/action/ArrangResultAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="61" column="5" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/dao/IArrangeResultDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SelectClass-ArrangeClass/src/test/java/demo/testModel/TestArrangeResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="37" column="53" selection-start-line="37" selection-start-column="53" selection-end-line="37" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/service/impl/ArrangeResultServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/model/ArrangeRule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-163">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/webapp/test.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/util/SimpleCORSFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SelectClass-Course/src/main/resource/redis.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SelectClass-Course/src/test/com/test/LuceneDemoByProduct.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="103" column="20" lean-forward="true" selection-start-line="103" selection-start-column="20" selection-end-line="103" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-44">
+          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SelectClass-ArrangeClass/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="101" column="20" lean-forward="true" selection-start-line="101" selection-start-column="20" selection-end-line="101" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/model/Message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/model/Course.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-111">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/model/Classroom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/util/AutoArrangeUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="514">
+          <caret line="185" column="82" selection-start-line="185" selection-start-column="82" selection-end-line="185" selection-end-column="82" />
+          <folding>
+            <element signature="method#initTimeTable#0;class#AutoArrangeUtil#0" />
+            <element signature="method#getCondition#0;class#AutoArrangeUtil#0" />
+            <element signature="method#getCourses#0;class#AutoArrangeUtil#0" />
+            <element signature="method#getSortCourses#0;class#AutoArrangeUtil#0" />
+            <element signature="method#arrange#0;class#AutoArrangeUtil#0" />
+            <element signature="method#place#0;class#AutoArrangeUtil#0" />
+            <element signature="method#morning#0;class#AutoArrangeUtil#0" />
+            <element signature="method#afternoon#0;class#AutoArrangeUtil#0" />
+            <element signature="method#scan#0;class#AutoArrangeUtil#0" />
+            <element signature="method#fillCourse#0;class#AutoArrangeUtil#0" />
+            <element signature="method#fillCourseBySeparate#0;class#AutoArrangeUtil#0" />
+            <element signature="method#randomMorning#0;class#AutoArrangeUtil#0" />
+            <element signature="method#fillRoom#0;class#AutoArrangeUtil#0" />
+            <element signature="method#randomNum#0;class#AutoArrangeUtil#0" />
+            <element signature="method#main#0;class#AutoArrangeUtil#0" />
+            <element signature="method#pringTimeTable#0;class#AutoArrangeUtil#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/service/ICourseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/service/impl/CourseServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="102" column="31" selection-start-line="102" selection-start-column="31" selection-end-line="102" selection-end-column="31" />
+          <folding>
+            <element signature="e#2327#2328#0" expanded="true" />
+            <element signature="e#2374#2375#0" expanded="true" />
+            <element signature="e#2603#2604#0" expanded="true" />
+            <element signature="e#2630#2631#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SelectClass-ArrangeClass/src/test/java/demo/testModel/TestCourse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="39" column="49" lean-forward="true" selection-start-line="39" selection-start-column="49" selection-end-line="39" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/resource/struts.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="39" column="156" selection-start-line="39" selection-start-column="156" selection-end-line="39" selection-end-column="156" />
+          <folding>
+            <element signature="n#action#2;n#package#3;n#struts#0;n#!!top" />
+            <element signature="n#action#3;n#package#3;n#struts#0;n#!!top" />
+            <element signature="n#action#4;n#package#3;n#struts#0;n#!!top" />
+            <element signature="n#action#5;n#package#3;n#struts#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/action/CourseAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="67" column="23" lean-forward="true" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SelectClass-ArrangeClass/src/test/java/demo/testModel/TestCourseWish.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="49" column="60" lean-forward="true" selection-start-line="49" selection-start-column="60" selection-end-line="49" selection-end-column="60" />
+          <folding>
+            <element signature="method#test2#0;class#TestCourseWish#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/model/CourseWish.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="44" column="16" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="16" />
+          <folding>
+            <element signature="e#1026#1027#0" expanded="true" />
+            <element signature="e#1066#1067#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/service/base/IBaseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-orm/5.0.6.RELEASE/spring-orm-5.0.6.RELEASE.jar!/org/springframework/orm/hibernate5/HibernateTemplate.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="460" column="16" selection-start-line="460" selection-start-column="16" selection-end-line="460" selection-end-column="16" />
+          <folding>
+            <element signature="e#4504#4505#0" expanded="true" />
+            <element signature="e#4555#4556#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/dao/impl/CourseWishDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="554">
+          <caret line="40" column="74" selection-start-line="40" selection-start-column="74" selection-end-line="40" selection-end-column="74" />
+          <folding>
+            <element signature="method#vagueQueryByMajor#0;class#CourseWishDaoImpl#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/service/impl/CourseWishServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="35" column="24" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
+          <folding>
+            <element signature="e#797#798#0" expanded="true" />
+            <element signature="e#839#840#0" expanded="true" />
+            <element signature="e#898#899#0" expanded="true" />
+            <element signature="e#942#943#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/dao/base/BaseDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="41" column="32" lean-forward="true" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1230#1231#0" expanded="true" />
+            <element signature="e#1280#1281#0" expanded="true" />
+            <element signature="e#1328#1329#0" expanded="true" />
+            <element signature="e#1378#1379#0" expanded="true" />
+            <element signature="e#1453#1454#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/dao/base/IBaseDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/action/CoursePlanAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="47" column="8" selection-start-line="47" selection-start-column="8" selection-end-line="49" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/model/CoursePlan.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="797">
+          <caret line="63" column="11" selection-start-line="63" selection-start-column="11" selection-end-line="63" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/service/ICoursePlanService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/service/impl/CoursePlanServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="106" column="24" lean-forward="true" selection-start-line="106" selection-start-column="24" selection-end-line="106" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/dao/ICoursePlanDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SelectClass-ArrangeClass/src/test/java/demo/testModel/TestCoursePlan.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="77" column="39" lean-forward="true" selection-start-line="77" selection-start-column="39" selection-end-line="77" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/dao/impl/CoursePlanDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="533">
+          <caret line="40" column="42" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#update#0;class#CoursePlanDaoImpl#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/model/ArrangeResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SelectClass-ArrangeClass/src/test/java/demo/TestConn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="40" column="24" lean-forward="true" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
+          <folding>
+            <element signature="e#914#915#0" expanded="true" />
+            <element signature="e#950#951#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/dao/impl/CourseDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="68" column="13" lean-forward="true" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
+          <folding>
+            <element signature="method#getCourses#0;class#CourseDaoImpl#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/dao/ICourseDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="17" column="20" lean-forward="true" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SelectClass-Course/src/test/com/redis/Demo1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SelectClass-Course/src/main/java/com/hzs/utils/RedisTestSpring.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="24" column="57" lean-forward="true" selection-start-line="24" selection-start-column="57" selection-end-line="24" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SelectClass-Course/src/main/java/com/hzs/utils/RedisUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/5.0.6.RELEASE/spring-test-5.0.6.RELEASE.jar!/org/springframework/test/context/junit4/statements/RunBeforeTestClassCallbacks.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SelectClass-Course/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="97" column="44" selection-start-line="97" selection-start-column="44" selection-end-line="97" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SelectClass-Course/src/main/resource/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="38" column="27" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
+          <folding>
+            <element signature="n#bean#0;n#beans#0;n#!!top" />
+            <element signature="n#bean#1;n#beans#0;n#!!top" />
+            <element signature="n#bean#2;n#beans#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SelectClass-Course/src/test/com/redis/RedisTestSpring.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="42" selection-start-line="42" selection-end-line="46" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SelectClass-Course/src/test/com/redis/TestRedisHashComman.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="32" column="41" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SelectClass-Course/src/test/com/redis/TestSpringRedis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="55" column="5" lean-forward="true" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SelectClass-Course/src/test/com/test/LuceneDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>SelectClass-ArrangeClass:war exploded</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2778561" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web (SelectClass)|Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.35915494" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.35915494" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>SelectClassCourse</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2778561" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8 (2)</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

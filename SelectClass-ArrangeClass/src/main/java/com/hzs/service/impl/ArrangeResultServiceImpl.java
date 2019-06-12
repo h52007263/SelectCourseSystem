@@ -33,6 +33,11 @@ public class ArrangeResultServiceImpl extends BaseServiceImpl<ArrangeResult> imp
     }
 
     @Override
+    public List<ArrangeResult> findAllByMajor(String major, String grade) {
+        return arrangeResultDao.findAllByMajor(major,grade);
+    }
+
+    @Override
     public void save(ArrangeResult entity) {
         arrangeResultDao.save(entity);
     }

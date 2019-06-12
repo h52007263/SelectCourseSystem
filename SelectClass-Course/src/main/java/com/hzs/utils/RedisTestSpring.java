@@ -15,14 +15,13 @@ import java.util.Map;
 public class RedisTestSpring {
 
     public static void main(String[] args) {
-        ApplicationContext context=new ClassPathXmlApplicationContext("classpath:applicationContext.xml");
+        ApplicationContext context=new ClassPathXmlApplicationContext("applicationContext.xml");
 
         RedisUtil redisUtil = (RedisUtil) context.getBean("redisUtil");
-
-                Map<String,Object> map=new HashMap<>();
-        map.put("name","hzs");
-        map.put("pwd","123");
-        redisUtil.hmset("admin",map);
-        System.out.println(redisUtil.hget("admin","pwd"));
+//        Map<String,Object> map=new HashMap<>();
+//        map.put("name","hzs");
+//        map.put("pwd","123");
+//        redisUtil.hmset("admin",map);
+        System.out.println(redisUtil.hget("user","pwd"));
     }
 }

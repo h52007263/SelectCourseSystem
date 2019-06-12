@@ -60,11 +60,29 @@ public class TestArrange {
     }
 
     @Test
+    public void test21(){
+
+        String major="软件工程";
+        String grade="2016";
+
+        List<Course> courses1=courseService.findAllByMajor(major,grade);
+
+        Map<String,Integer> map1=new HashMap<>();
+
+        for(Course course:courses1)
+            map1.put(course.getCourseName(),course.getCapacity());
+
+        int capacity = map1.get("数据结构").intValue();
+        System.out.println(capacity);
+
+    }
+
+    @Test
     public void test12(){
 
         String major="软件工程";
         String grade="2016";
-        List<CourseWish> courses=courseWishService.findAll();
+        List<CourseWish> courses=courseWishService.vagueQueryByMajor(major,grade);
         String[] result=new String[21];
         Arrays.fill(result,"0");
 
@@ -97,6 +115,7 @@ public class TestArrange {
         for(Course course:courses1){
             mapTeacher.put(course.getCourseName(),course.getTeacher().getName());
         }
+
         //获取最后的结果
         List<ArrangeResult> resultList = AutoArrangeUtil.fillRoom(result,classrooms,map1,mapTeacher,major,Integer.parseInt(grade));
 

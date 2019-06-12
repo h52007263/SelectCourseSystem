@@ -45,7 +45,7 @@ public class ArrangeResult implements Serializable {
 
     @Id
     @GenericGenerator(name = "room_name",strategy = "assigned")
-    @GeneratedValue(generator = "use_time")
+    @GeneratedValue(generator = "room_name")
     @Column(name = "room_name",length = 10)
     public String getRoomName() {
         return roomName;
@@ -55,6 +55,9 @@ public class ArrangeResult implements Serializable {
         this.roomName = roomName;
     }
 
+    @Id
+    @GenericGenerator(name = "major",strategy = "assigned")
+    @GeneratedValue(generator = "major")
     @Column(name = "major",length = 20)
     public String getMajor() {
         return major;

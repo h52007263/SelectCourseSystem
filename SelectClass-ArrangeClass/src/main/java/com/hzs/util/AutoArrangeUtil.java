@@ -243,8 +243,6 @@ public class AutoArrangeUtil {
         return true;
     }
 
-
-
     //有多个空间满足时，按序分配
     private static int randomMorning(){
 //        return (int)(Math.random() * morningList.size());
@@ -260,10 +258,23 @@ public class AutoArrangeUtil {
     //通过专业和年级定位
     //map courseName  capacity
     //课程时间，教室，容量，专业
+
+    /**
+     *
+     * @param result
+     * @param classrooms    教室
+     * @param map           map<string，integer> 课程名和容量
+     * @param mapTeacher    map<String,String>  课程对应的教师
+     * @param major
+     * @param grade
+     * @return
+     */
     public static List<ArrangeResult> fillRoom(String[] result, List<Classroom> classrooms, Map<String,Integer> map,Map<String,String> mapTeacher, String major, int grade){
         List<ArrangeResult> results=new ArrayList<>();
         ArrangeResult arrangeResult=null;
         String roomName="";
+        System.out.println("map的长度是："+map.size());
+        System.out.println(map);
         for(int i=1;i<result.length;i++){
             if(result[i]=="0" || result[i]=="没有课程")
                 continue;

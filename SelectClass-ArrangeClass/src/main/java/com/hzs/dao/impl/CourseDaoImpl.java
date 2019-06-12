@@ -45,8 +45,41 @@ public class CourseDaoImpl extends BaseDaoImpl<Course> implements ICourseDao {
         query.setParameter(2,"%"+condition+"%");
 
         List<Object[]> objects=query.list();
-        List<Course> list=new ArrayList<>();
 
+        return getCourses(objects);
+    }
+
+    @Override
+    public List<Course> findAllMajor() {
+        String hql="from Course c GROUP BY major ";
+        Query query=sessionFactory.getCurrentSession().createQuery(hql);
+        return query.list();
+    }
+
+    //通过课程名和专业查询课程对象
+    @Override
+    public List<Course> findByNameMajor(String major, String courseName) {
+        String hql="from Course c where major = ?0 and courseName = ?1";
+        Query query=sessionFactory.getCurrentSession().createQuery(hql);
+        query.setParameter(0,major);
+        query.setParameter(1,courseName);
+        return query.list();
+    }
+
+    @Override
+    public List<Course> findNoCourseByMajor(String major) {
+        String sql="select c.* from course c where c.major=?0 and c.course_id not in " +
+                "(select course_id from course_plan cp1)";
+        Query query=sessionFactory.getCurrentSession().createSQLQuery(sql);
+        query.setParameter(0,major);
+
+        List<Object[]> objects=query.list();
+
+        return getCourses(objects);
+    }
+
+    public List<Course> getCourses(List<Object[]> objects){
+        List<Course> list=new ArrayList<>();
         for(Object[] objs:objects){
             int courseId=Integer.parseInt(objs[0].toString());
             int teacherId=Integer.parseInt(objs[1].toString());
@@ -58,7 +91,7 @@ public class CourseDaoImpl extends BaseDaoImpl<Course> implements ICourseDao {
             int grade1=Integer.parseInt(objs[7].toString());
             String major1=objs[8].toString();
 
-           Teacher teacher = teacherService.find(teacherId);
+            Teacher teacher = teacherService.find(teacherId);
 
 //            int courseId, String courseName, String courseProperty, Integer courseHour,
 //                    Integer courseCredit, Integer capacity, Integer grade, String major
@@ -66,6 +99,8 @@ public class CourseDaoImpl extends BaseDaoImpl<Course> implements ICourseDao {
             course.setTeacher(teacher);
             list.add(course);
         }
+
         return list;
     }
+
 }

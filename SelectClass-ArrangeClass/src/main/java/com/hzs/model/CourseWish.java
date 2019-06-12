@@ -21,6 +21,19 @@ public class CourseWish {
     private Integer joins;       //是否连堂
     private Integer ampm;       //期望上/下午
 
+    //课程意向  一对一     课程
+    private  Course course;
+
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "course_id")
+    public Course getCourse() {
+        return course;
+    }
+
+    public void setCourse(Course course) {
+        this.course = course;
+    }
+
     @Id
     @GenericGenerator(name = "id",strategy = "assigned")
     @GeneratedValue(generator = "id")
@@ -92,7 +105,7 @@ public class CourseWish {
 
     @Override
     public String toString() {
-        return "CourseWith{" +
+        return "CourseWish{" +
                 "courseId=" + courseId +
                 ", courseName='" + courseName + '\'' +
                 ", weight=" + weight +

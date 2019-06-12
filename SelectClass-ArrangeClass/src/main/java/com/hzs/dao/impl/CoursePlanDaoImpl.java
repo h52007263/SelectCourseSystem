@@ -1,5 +1,6 @@
 package com.hzs.dao.impl;
 
+import com.hzs.dao.ICourseDao;
 import com.hzs.dao.ICoursePlanDao;
 import com.hzs.dao.base.BaseDaoImpl;
 import com.hzs.model.Course;
@@ -11,6 +12,7 @@ import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -33,35 +35,50 @@ public class CoursePlanDaoImpl extends BaseDaoImpl<CoursePlan> implements ICours
     private ICourseService courseService;
 
     @Autowired
+    private ICourseDao courseDao;
+
+    @Autowired
     private ICoursePlanService coursePlanService;
 
-    public void save(CoursePlan entity,int courseId) {
+    public void save(CoursePlan entity,String courseName) {
         //课程计划表的最大id
-        int courseplanId= (int) findMaxId();
-        courseplanId+=1;
+        int courseplanId= (int) findMaxId()+1;
         //设置新对象的id，【权重，周节次通过前端注入了】
         entity.setCourseplanId(courseplanId);
         //设置新对象的course
-        Course course=courseService.find(courseId);
+//        Course course=courseService.findByField(courseName,"courseName");
 
-        entity.setCourse(course);
+//        entity.setCourse(course);
 
-        System.out.println(entity);
+//        System.out.println(entity);
 
-        super.save(entity);
+        super.hibernateTemplate.merge(entity);
     }
 
     @Override
     public void update(CoursePlan coursePlan, String courseName) {
-        //通过courseName查询出课程对象
+//        通过courseName查询出课程对象
         Course course = courseService.findByField(courseName,"courseName");
 
-        //注入 课程 对象到 课程计划 中
+//        注入 课程 对象到 课程计划 中
         coursePlan.setCourse(course);
 
+        hibernateTemplate.setCheckWriteOperations(false);
+
         //注入课程计划关联的【课程】的属性
-//        super.update(coursePlan);
-        super.hibernateTemplate.merge(coursePlan);
+//        super.hibernateTemplate.update(coursePlan);
+          hibernateTemplate.merge("coursePlan",coursePlan);
+
+
+//        String sql="update course_plan set weight=?0,section=?1,course_id=?2 where courseplan_id=?3";
+//        Query query = sessionFactory.openSession().createSQLQuery(sql);
+//        query.setParameter(0,coursePlan.getWeight());
+//        query.setParameter(1,coursePlan.getSection());
+//        query.setParameter(2,coursePlan.getCourseplanId());
+//        query.setParameter(3,coursePlan.getCourseplanId());
+//
+//        query.executeUpdate();
+
     }
 
     //通过专业和年级查询课程计划，以课程计划为主，比如查询出课程1，2，3  但是排计划的只有1，2  那么结果是1，2
@@ -77,7 +94,7 @@ public class CoursePlanDaoImpl extends BaseDaoImpl<CoursePlan> implements ICours
 
         System.out.println(query.list().size());
 
-        List<Object> list=query.list();
+        List<Object[]> list=query.list();
 
         List<CoursePlan> coursePlans=new ArrayList<>();
 
@@ -108,6 +125,48 @@ public class CoursePlanDaoImpl extends BaseDaoImpl<CoursePlan> implements ICours
             }
         }
         return courses;
+    }
+
+    @Override
+    public void updateCascade(CoursePlan coursePlan) {
+        int weight=coursePlan.getWeight();
+        int section=coursePlan.getSection();
+        int courseplanId=coursePlan.getCourseplanId();
+        String sql="update course_plan cp,course_wish cw set cp.weight=?0,cp.section=?1,cw.weight=?2,cw.section=?3 where courseplan_id=?4" +
+                " and cw.course_id=cp.course_id";
+        Query query=sessionFactory.getCurrentSession().createSQLQuery(sql);
+        query.setParameter(0,weight);
+        query.setParameter(1,section);
+        query.setParameter(2,weight);
+        query.setParameter(3,section);
+        query.setParameter(4,courseplanId);
+
+        query.executeUpdate();
+
+    }
+
+    @Override
+    public List<CoursePlan> vagueQuery1(Object condition, String field) {
+        String sql="select cp.* from course_plan cp,course c where cp.course_id=c.course_id and c.course_name like ?0";
+        Query query=sessionFactory.getCurrentSession().createSQLQuery(sql);
+        query.setParameter(0,"%"+condition+"%");
+
+        List<Object[]> objects = query.list();
+        //存放返回的集合
+        List<CoursePlan> coursePlans=new ArrayList<>();
+        for(Object[] objs:objects){
+            int coursePlanId=Integer.parseInt(objs[0].toString());
+            int courseId=Integer.parseInt(objs[1].toString());
+            int weight=Integer.parseInt(objs[2].toString());
+            int section=Integer.parseInt(objs[3].toString());
+
+            CoursePlan coursePlan=new CoursePlan(coursePlanId,weight,section);
+            coursePlan.setCourse(courseService.find(courseId));
+
+            coursePlans.add(coursePlan);
+        }
+
+        return coursePlans;
     }
 
     @Override

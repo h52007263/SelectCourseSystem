@@ -12,7 +12,7 @@ public interface ICoursePlanService extends IBaseService<CoursePlan> {
     public Serializable findMaxId();
 
     //增加【关联课程的增加】
-    public void save(CoursePlan entity,int courseId);
+    public void save(CoursePlan entity,String courseName,String major);
 
     public void update(CoursePlan model, String courseName);
 
@@ -21,4 +21,7 @@ public interface ICoursePlanService extends IBaseService<CoursePlan> {
 
     //查询课程表中没有加入课程计划的课程
     public List<Course> findCourse();
+
+    //级联更新课程计划和课程意向
+    public void updateCascade(CoursePlan coursePlan);
 }

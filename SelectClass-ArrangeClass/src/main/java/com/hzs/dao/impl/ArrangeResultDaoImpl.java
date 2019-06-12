@@ -10,8 +10,11 @@ import com.hzs.service.IClassroomService;
 import com.hzs.service.ICourseService;
 import com.hzs.service.ICourseWishService;
 import com.hzs.util.AutoArrangeUtil;
+import org.hibernate.SessionFactory;
+import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -26,6 +29,7 @@ import java.util.Map;
  */
 
 @Repository
+@Transactional
 public class ArrangeResultDaoImpl extends BaseDaoImpl<ArrangeResult> implements IArrangeResultDao {
 
     @Autowired
@@ -37,9 +41,12 @@ public class ArrangeResultDaoImpl extends BaseDaoImpl<ArrangeResult> implements 
     @Autowired
     private ICourseService courseService;
 
+    @Autowired
+    private SessionFactory sessionFactory;
+
     @Override
     public List<ArrangeResult> generateResult(Map<Integer, String> map, String major, String grade) {
-        List<CourseWish> courses=courseWishService.findAll();
+        List<CourseWish> courses=courseWishService.vagueQueryByMajor(major,grade);
         String[] result=new String[21];
         Arrays.fill(result,"0");
 
@@ -68,5 +75,15 @@ public class ArrangeResultDaoImpl extends BaseDaoImpl<ArrangeResult> implements 
         List<ArrangeResult> resultList = AutoArrangeUtil.fillRoom(result,classrooms,map1,mapTeacher,major,Integer.parseInt(grade));
 
         return resultList;
+    }
+
+    @Override
+    public List<ArrangeResult> findAllByMajor(String major, String grade) {
+
+        String hql="from ArrangeResult where major = ?0 and grade = ?1";
+        Query query=sessionFactory.getCurrentSession().createQuery(hql);
+        query.setParameter(0,major);
+        query.setParameter(1,Integer.parseInt(grade));
+        return query.list();
     }
 }

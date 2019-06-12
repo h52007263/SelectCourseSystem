@@ -31,6 +31,11 @@ public class TestConn {
     @Autowired
     private IUserService userService;
 
+    @Test
+    public void testUpdate(){
+        System.out.println("更新了");
+    }
+
     //测试更新
     @Test
     public void test5(){

@@ -13,7 +13,7 @@ public interface ICoursePlanDao extends IBaseDao<CoursePlan> {
     public Serializable findMaxId();
 
     //增加，关联课程的增加
-    public void save(CoursePlan entity,int courseId);
+    public void save(CoursePlan entity,String courseName);
 
     //更新，关联课程的更新
     public void update(CoursePlan coursePlan,String courseName);
@@ -23,5 +23,8 @@ public interface ICoursePlanDao extends IBaseDao<CoursePlan> {
 
     //查询课程表中没有加入课程计划的课程
     public List<Course> findCourse();
+
+    //级联的更新 对课程计划和课程意向
+    public void updateCascade(CoursePlan coursePlan);
 
 }

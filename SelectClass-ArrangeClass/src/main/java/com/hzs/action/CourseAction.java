@@ -24,7 +24,7 @@ import java.util.List;
 public class CourseAction extends BaseAction<Course> {
     private JSONObject jsonObject;
     //设置不转json的属性
-    protected String[] strs=new String[]{"curr","limit","courses","course","coursePlan"};
+    protected String[] strs=new String[]{"curr","limit","courses","course","coursePlan","courseWish"};
     @Autowired
     private ICourseService courseService;
 
@@ -59,6 +59,22 @@ public class CourseAction extends BaseAction<Course> {
     public String findAll() {
         List<Course> list= courseService.findAll();
         jsonObject=responseJson(pb,list,strs);
+        return SUCCESS;
+    }
+
+    //获取所有专业
+    public String findAllMajor(){
+        List<Course> courses = courseService.findAllMajor();
+        jsonObject=responseJson(pb,courses,strs);
+        return SUCCESS;
+    }
+
+    //获取某专业没被加入到课程计划的课程
+    public String findNoJoinCourse(){
+        HttpServletRequest request=ServletActionContext.getRequest();
+        String major=request.getParameter("major");
+        List<Course> courses = courseService.findNoCourseByMajor(major);
+        jsonObject=responseJson(pb,courses,strs);
         return SUCCESS;
     }
 

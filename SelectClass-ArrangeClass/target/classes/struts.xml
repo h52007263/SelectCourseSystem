@@ -37,7 +37,7 @@
             <result name="success" type="json">
                 <param name="root">jsonObject</param>
             </result>
-            <allowed-methods>findAllByThree,save,delete,update,find,findAll,pageQuery,vagueQuery,findByDifMajor,findByDifGrade</allowed-methods>
+            <allowed-methods>findAllByThree,save,delete,update,find,findAll,pageQuery,vagueQuery,findByDifMajor,findByDifGrade,findAllMajor,findNoJoinCourse</allowed-methods>
         </action>
 
         <action name="coursePlanAction_*" class="com.hzs.action.CoursePlanAction" method="{1}">
@@ -79,14 +79,14 @@
             <result name="success" type="json">
                 <param name="root">jsonObject</param>
             </result>
-            <allowed-methods>save,delete,update,findAll</allowed-methods>
+            <allowed-methods>save,delete,update,findAll,pageQuery,vagueQueryByMajor</allowed-methods>
         </action>
 
         <action name="arrangeResultAction_*" class="com.hzs.action.ArrangResultAction" method="{1}">
             <result name="success" type="json">
                 <param name="root">jsonObject</param>
             </result>
-            <allowed-methods>batchSave,findAll</allowed-methods>
+            <allowed-methods>batchSave,findAll,findAllByMajor</allowed-methods>
         </action>
 
     </package>

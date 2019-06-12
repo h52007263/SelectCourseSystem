@@ -9,7 +9,7 @@
   <version>1.0-SNAPSHOT</version>
 
   <modules>
-    <module>SelectClass-ArrangeClass</module>
+      <module>SelectClass-ArrangeClass</module>
       <module>SelectClass-Course</module>
   </modules>
 

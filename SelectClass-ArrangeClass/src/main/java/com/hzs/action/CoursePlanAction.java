@@ -3,7 +3,9 @@ package com.hzs.action;
 import com.hzs.action.base.BaseAction;
 import com.hzs.model.Course;
 import com.hzs.model.CoursePlan;
+import com.hzs.model.CourseWish;
 import com.hzs.service.ICoursePlanService;
+import com.hzs.service.ICourseWishService;
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
 import net.sf.json.JsonConfig;
@@ -31,32 +33,46 @@ public class CoursePlanAction extends BaseAction<CoursePlan> {
     private HttpServletRequest request;
 
     //设置不转json的属性
-    protected String[] strs=new String[]{"curr","limit","coursePlan","teacher","courseId"};
+    protected String[] strs=new String[]{"curr","limit","coursePlan","teacher","courseId","courseWish"};
 
     @Autowired
     private ICoursePlanService coursePlanService;
+
+    @Autowired
+    private ICourseWishService courseWishService;
 
     //增加课程计划【课程计划的courseId,通过设置course对象进行增加】
     @Override
     public String save() {
         request=ServletActionContext.getRequest();
-        int courseId = Integer.parseInt(request.getParameter("courseId"));
-        coursePlanService.save(getModel(),courseId);
+        String  courseName = request.getParameter("courseName");
+        String major=request.getParameter("major");
+        coursePlanService.save(getModel(),major,courseName);
         return SUCCESS;
     }
 
     @Override
     public String delete() {
+        HttpServletRequest request=ServletActionContext.getRequest();
+        String courseName = request.getParameter("courseName");
+        System.out.println(getModel().getCourseplanId());
         coursePlanService.delete(getModel());
+//        CourseWish courseWish=courseWishService.findByField(courseName,"courseName");
+//        courseWish.setWeight(0);
+//        courseWish.setSection(0);
+//        courseWish.setJoins(0);
+//        courseWish.setAmpm(0);
+//        courseWishService.updatePure(courseWish);
         return SUCCESS;
     }
 
     @Override
     public String update() {
-        request=ServletActionContext.getRequest();
-        String courseName=request.getParameter("courseName");
         System.out.println(getModel());
-        coursePlanService.update(getModel(),courseName);
+        CoursePlan coursePlan = coursePlanService.find(getModel().getCourseplanId());
+        coursePlan.setWeight(getModel().getWeight());
+        coursePlan.setSection(getModel().getSection());
+        coursePlanService.updateCascade(coursePlan);
         return SUCCESS;
     }
 
@@ -78,9 +94,9 @@ public class CoursePlanAction extends BaseAction<CoursePlan> {
 
     public String findCourse() throws IOException {
         List<Course> list = coursePlanService.findCourse();
-        String[] strs1=new String[]{"coursePlan","teacher"};
+        String[] strs1=new String[]{"coursePlan","teacher","courseWish"};
         JsonConfig config=new JsonConfig();
-        config.setExcludes(strs1);
+        config.setExcludes(strs);
         JSONArray jsonArray=JSONArray.fromObject(list,config);
         System.out.println(jsonArray.toString());
         HttpServletResponse response=ServletActionContext.getResponse();

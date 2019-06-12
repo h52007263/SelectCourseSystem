@@ -1,5 +1,6 @@
 package demo.testModel;
 
+import com.hzs.dao.IArrangeResultDao;
 import com.hzs.model.ArrangeResult;
 import com.hzs.model.ArrangeRule;
 import com.hzs.service.IArrangeResultService;
@@ -28,9 +29,31 @@ public class TestArrangeResult {
     @Autowired
     private IArrangeResultService arrangeResultService;
 
+    @Autowired
+    private IArrangeResultDao arrangeResultDao;
+
+    @Test
+    public void test5(){
+
+        arrangeResultService.batchDelete("计算机","2016");
+
+//        List<ArrangeResult> list = arrangeResultService.generateResult(new HashMap<Integer, String>(),"计算机","2016");
+//        list.forEach(arrangeResult -> System.out.println(arrangeResult));
+    }
+
     @Test
     public void test3(){
         arrangeResultService.batchDelete("软件工程","2016");
+    }
+
+    @Test
+    public void test4(){
+        List<ArrangeResult> arrangeResults = arrangeResultDao.findAllByMajor("软件工程","2016");
+
+        arrangeResults.forEach(
+                arrangeResult -> System.out.println(arrangeResult)
+        );
+
     }
 
     @Test

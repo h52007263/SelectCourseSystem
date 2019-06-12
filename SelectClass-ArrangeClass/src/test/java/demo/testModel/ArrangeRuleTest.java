@@ -1,6 +1,8 @@
 package demo.testModel;
 
 import com.hzs.dao.IArrangeRuleDao;
+import com.hzs.model.ArrangeResult;
+import com.hzs.model.ArrangeRule;
 import com.hzs.service.IArrangeRuleService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -9,6 +11,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * @author hezhensheng
@@ -32,8 +35,9 @@ public class ArrangeRuleTest {
 //        arrangeRuleDao.findAll()
 //                .stream().forEach(arrangeRule -> System.out.println(arrangeRule));
 
-        arrangeRuleService.findAll()
-                .forEach(arrangeRule -> System.out.println(arrangeRule));
+//        arrangeRuleService.findAll()
+//                .forEach(arrangeRule -> System.out.println(arrangeRule));
+
 
     }
 

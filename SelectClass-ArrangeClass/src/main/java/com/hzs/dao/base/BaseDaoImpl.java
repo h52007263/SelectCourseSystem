@@ -40,7 +40,7 @@ public class BaseDaoImpl<T> implements IBaseDao<T>{
 
     @Override
     public void save(T entity) {
-        hibernateTemplate.save(entity);
+        hibernateTemplate.merge(entity);
     }
 
     @Override
@@ -50,7 +50,7 @@ public class BaseDaoImpl<T> implements IBaseDao<T>{
 
     @Override
     public void update(T entity) {
-        hibernateTemplate.update(entity);
+        hibernateTemplate.merge(entityClass.getSimpleName(),entity);
     }
 
     @Override
