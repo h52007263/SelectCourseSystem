@@ -7,90 +7,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9acdadb7-1014-4e2c-b409-2f325e263128" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/test/java/demo/testModel/CourseWish_Course.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/SelectClass_ArrangeClass_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/SelectClass_ArrangeClass_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/action/ArrangResultAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/action/ArrangResultAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/action/CourseAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/action/CourseAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/action/CoursePlanAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/action/CoursePlanAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/action/CourseWishAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/action/CourseWishAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/dao/IArrangeResultDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/dao/IArrangeResultDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/dao/ICourseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/dao/ICourseDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/dao/ICoursePlanDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/dao/ICoursePlanDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/dao/ICourseWishDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/dao/ICourseWishDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/dao/base/BaseDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/dao/base/BaseDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/dao/impl/ArrangeResultDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/dao/impl/ArrangeResultDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/dao/impl/CourseDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/dao/impl/CourseDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/dao/impl/CoursePlanDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/dao/impl/CoursePlanDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/dao/impl/CourseWishDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/dao/impl/CourseWishDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/model/ArrangeResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/model/ArrangeResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/model/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/model/Course.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/model/CourseWish.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/model/CourseWish.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/service/IArrangeResultService.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/service/IArrangeResultService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/service/ICoursePlanService.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/service/ICoursePlanService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/service/ICourseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/service/ICourseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/service/ICourseWishService.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/service/ICourseWishService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/service/impl/ArrangeResultServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/service/impl/ArrangeResultServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/service/impl/CoursePlanServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/service/impl/CoursePlanServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/service/impl/CourseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/service/impl/CourseServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/service/impl/CourseWishServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/service/impl/CourseWishServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/util/AutoArrangeUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/util/AutoArrangeUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/util/SimpleCORSFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/java/com/hzs/util/SimpleCORSFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/resource/spring/spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/resource/spring/spring.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/resource/struts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/main/resource/struts.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/test/java/demo/TestArrange.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/test/java/demo/TestArrange.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/test/java/demo/TestConn.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/test/java/demo/TestConn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/test/java/demo/testModel/ArrangeRuleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/test/java/demo/testModel/ArrangeRuleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/test/java/demo/testModel/TestArrangeResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/test/java/demo/testModel/TestArrangeResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/test/java/demo/testModel/TestCourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/test/java/demo/testModel/TestCourse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/test/java/demo/testModel/TestCoursePlan.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/test/java/demo/testModel/TestCoursePlan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/test/java/demo/testModel/TestCourseWish.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/src/test/java/demo/testModel/TestCourseWish.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/classes/META-INF/SelectClass-ArrangeClass.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/classes/com/hzs/action/CourseAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/classes/com/hzs/action/CourseAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/classes/com/hzs/action/CoursePlanAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/classes/com/hzs/action/CoursePlanAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/classes/com/hzs/dao/ICourseDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/classes/com/hzs/dao/ICourseDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/classes/com/hzs/dao/ICoursePlanDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/classes/com/hzs/dao/ICoursePlanDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/classes/com/hzs/dao/base/BaseDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/classes/com/hzs/dao/base/BaseDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/classes/com/hzs/dao/impl/CourseDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/classes/com/hzs/dao/impl/CourseDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/classes/com/hzs/dao/impl/CoursePlanDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/classes/com/hzs/dao/impl/CoursePlanDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/classes/com/hzs/model/Course.class" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/classes/com/hzs/model/Course.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/classes/com/hzs/service/ICoursePlanService.class" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/classes/com/hzs/service/ICoursePlanService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/classes/com/hzs/service/ICourseService.class" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/classes/com/hzs/service/ICourseService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/classes/com/hzs/service/impl/CoursePlanServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/classes/com/hzs/service/impl/CoursePlanServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/classes/com/hzs/service/impl/CourseServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/classes/com/hzs/service/impl/CourseServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/classes/com/hzs/util/SimpleCORSFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/classes/com/hzs/util/SimpleCORSFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/classes/spring/spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/classes/spring/spring.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/classes/struts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/classes/struts.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/student/WEB-INF/classes/META-INF/SelectClass-ArrangeClass.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/student/WEB-INF/classes/com/hzs/action/CourseAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/student/WEB-INF/classes/com/hzs/action/CourseAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/student/WEB-INF/classes/com/hzs/action/CoursePlanAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/student/WEB-INF/classes/com/hzs/action/CoursePlanAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/student/WEB-INF/classes/com/hzs/dao/ICourseDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/student/WEB-INF/classes/com/hzs/dao/ICourseDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/student/WEB-INF/classes/com/hzs/dao/ICoursePlanDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/student/WEB-INF/classes/com/hzs/dao/ICoursePlanDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/student/WEB-INF/classes/com/hzs/dao/base/BaseDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/student/WEB-INF/classes/com/hzs/dao/base/BaseDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/student/WEB-INF/classes/com/hzs/dao/impl/CourseDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/student/WEB-INF/classes/com/hzs/dao/impl/CourseDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/student/WEB-INF/classes/com/hzs/dao/impl/CoursePlanDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/student/WEB-INF/classes/com/hzs/dao/impl/CoursePlanDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/student/WEB-INF/classes/com/hzs/model/Course.class" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/student/WEB-INF/classes/com/hzs/model/Course.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/student/WEB-INF/classes/com/hzs/service/ICoursePlanService.class" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/student/WEB-INF/classes/com/hzs/service/ICoursePlanService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/student/WEB-INF/classes/com/hzs/service/ICourseService.class" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/student/WEB-INF/classes/com/hzs/service/ICourseService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/student/WEB-INF/classes/com/hzs/service/impl/CoursePlanServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/student/WEB-INF/classes/com/hzs/service/impl/CoursePlanServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/student/WEB-INF/classes/com/hzs/service/impl/CourseServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/student/WEB-INF/classes/com/hzs/service/impl/CourseServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/student/WEB-INF/classes/com/hzs/util/SimpleCORSFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/student/WEB-INF/classes/com/hzs/util/SimpleCORSFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/student/WEB-INF/classes/spring/spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/student/WEB-INF/classes/spring/spring.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/student/WEB-INF/classes/struts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/student/WEB-INF/classes/struts.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/student/WEB-INF/lib/SelectClass-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/student/WEB-INF/lib/SelectClass-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/test-classes/demo/TestArrange.class" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/test-classes/demo/TestArrange.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/test-classes/demo/TestConn.class" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/test-classes/demo/TestConn.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/test-classes/demo/testModel/ArrangeRuleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-ArrangeClass/target/test-classes/demo/testModel/ArrangeRuleTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-Course/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-Course/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-Course/src/main/java/com/hzs/utils/RedisTestSpring.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-Course/src/main/java/com/hzs/utils/RedisTestSpring.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-Course/src/main/java/com/hzs/utils/RedisUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-Course/src/main/java/com/hzs/utils/RedisUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-Course/src/main/resource/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-Course/src/main/resource/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass-Course/src/test/com/redis/TestSpringRedis.java" beforeDir="false" afterPath="$PROJECT_DIR$/SelectClass-Course/src/test/com/redis/TestSpringRedis.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectClass.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="9acdadb7-1014-4e2c-b409-2f325e263128" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/SelectClass-ArrangeClass/target/" />
@@ -148,8 +65,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SelectClass-Course/src/test/com/test/LuceneDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+            <state relative-caret-position="-816">
+              <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
             </state>
           </provider>
         </entry>
@@ -470,7 +387,7 @@
     <property name="JPA.DatabaseSchemaImportDialog" value="176d59c9-82cb-4b65-9b36-b854183ea525" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560330193442" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560333746461" />
     <property name="database.console.LAST_STATE" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -518,7 +435,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestSpringRedis.test1">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 8 8111">
     <configuration name="RedisTestSpring" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.hzs.utils.RedisTestSpring" />
       <module name="SelectClass-Course" />
@@ -810,7 +727,7 @@
       <workItem from="1560179028540" duration="25000" />
       <workItem from="1560184389073" duration="1438000" />
       <workItem from="1560257741979" duration="12876000" />
-      <workItem from="1560301424321" duration="11307000" />
+      <workItem from="1560301424321" duration="13133000" />
     </task>
     <task id="LOCAL-00001" summary="课程信息管理系统">
       <created>1559522913524</created>
@@ -862,7 +779,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="390945000" />
+    <option name="totallyTimeSpent" value="392771000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -875,8 +792,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8448023" visible="true" weight="0.30227882" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8448023" visible="true" weight="0.30227882" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -886,7 +804,7 @@
       <window_info id="Persistence" order="7" sideWeight="0.15519765" side_tool="true" weight="0.32908848" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.5175953" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.57841825" visible="true" weight="0.38269794" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.57841825" visible="true" weight="0.3181818" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39970717" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1450,8 +1368,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SelectClass-Course/src/test/com/test/LuceneDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        <state relative-caret-position="-816">
+          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
         </state>
       </provider>
     </entry>
