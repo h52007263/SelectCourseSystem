@@ -28,7 +28,7 @@
     <spring.version>5.0.6.RELEASE</spring.version>
     <struts.version>2.5.16</struts.version>
     <hibernate.version>5.3.0.Final</hibernate.version>
-    <mysql.version>5.1.46</mysql.version>
+    <mysql.version>8.0.16</mysql.version>
     <druid.version>1.1.9</druid.version>
     <log4j.version>2.11.0</log4j.version>
     <jetty.version>9.4.10.v20180503</jetty.version>
